@@ -170,6 +170,24 @@ run;
 
 ```
 
+#### Won't assign anything
+
+---
+
+```sas 
+/* When there isn't enough data for even one observation */ 
+Data D1;
+input var1 var2;
+datalines;
+1 
+;
+run;
+
+Proc print data=D1;
+run;
+
+```
+
 ---
 
 #### Reading data as either Character or Number
