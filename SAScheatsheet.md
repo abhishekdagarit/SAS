@@ -380,7 +380,21 @@ run;
 options pagenumber=100;
 ```
 
+List size
+```sas
+options ls=23;
+options ls=43;
+options ls=256;
+Proc print data=D1;
+run;
+```
 
+Page size
+```sas
+options ps=10;
+Proc print data=D1;
+run;
+```
 
 
 
