@@ -14,14 +14,45 @@ Proc print data=<dataset's name>;
 
 Variation: 
 
-Numeric variables only: ```sas <var1>--numeric--<var2> ```
-Character variables only: ```sas <var1>--character--<var2> ```
-All variables from-to: ```sas <var1>--<var2> ```
-Particular Observations only: ```sas var <var1> ```
-Changing the first observation: ```sas firstobs = 30 ```
-Changing the last observation: ```sas obs = 30 ```
-Not printing observations column: ```sas noobs ```
-Printing only distinct observations: ```sas distinct ```
+Numeric variables only: 
+```sas 
+<var1>--numeric--<var2> 
+```
+
+Character variables only: 
+```sas 
+<var1>--character--<var2> 
+```
+
+All variables from-to: 
+```sas 
+<var1>--<var2> 
+```
+
+Particular Observations only: 
+```sas 
+var <var1> 
+```
+
+Changing the first observation: 
+```sas 
+firstobs = 30 
+```
+
+Changing the last observation: 
+```sas 
+obs = 30 
+```
+
+Not printing observations column: 
+```sas 
+noobs 
+```
+
+Printing only distinct observations: 
+```sas 
+distinct 
+```
 
 
 Freq
