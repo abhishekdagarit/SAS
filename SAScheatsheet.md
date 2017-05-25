@@ -94,10 +94,12 @@ class <var1>;
 var <var2>;
 ```
 
-## Creating Data within SAS
+## Reading Data
 
 ---
 
+
+Creating data wihtin SAS
 
 ```sas
 Data D1;
@@ -124,10 +126,9 @@ run;
 
 ```
 
-## Reading data as either Character or Number
-
 ---
 
+Reading data as either Character or Number
 
 ```sas
 Data D1;
@@ -145,9 +146,9 @@ Proc print data=D1;
 run;
 ```
 
-## Delimiter Sensitive Data
-
 ---
+
+Delimiter Sensitive Data
 
 ```sas
 Data D1;
@@ -159,10 +160,9 @@ Proc print data=D1;
 run;
 ```
 
-
-## Missover 
-
 ---
+
+Missover 
 
 When some values are missing and we need to move forward. 
 
