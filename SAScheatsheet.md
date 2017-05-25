@@ -13,19 +13,12 @@ Print
 Variation: 
 
 Numeric variables only: `<var1>--numeric--<var2>`
-
 Character variables only: `<var1>--character--<var2>`
-
 All variables from-to: `<var1>--<var2>` 
-
 Particular Observations only: `var <var1>`
-
 Changing the first observation: `firstobs = 30`
-
 Changing the last observation: `obs = 30`
-
 Not printing observations column: `noobs`
-
 Printing only distinct observations: `distinct`
 
 
