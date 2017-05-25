@@ -94,6 +94,22 @@ class <var1>;
 var <var2>;
 ```
 
+## Reading Data from external source
+
+---
+
+
+```sas
+Data D1;
+infile 'D:computer/code/file.csv';
+input var1 var2;
+run;
+
+Proc print data=D1;
+run;
+```
+
+
 ## Reading Data
 
 ---
