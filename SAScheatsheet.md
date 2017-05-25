@@ -7,7 +7,7 @@
 ---
 
 
-Print
+#### Print
 ```sas
 Proc print data=<dataset's name>;
 ````
@@ -26,7 +26,7 @@ distinct
 ```
 
 ---
-Freq
+#### Freq
 
 ```sas
 Proc freq data=<dataset's name>;
@@ -46,7 +46,7 @@ Two way frequency distribution: `table <var1>*<var2>`
 ```
 
 ---
-Sort
+#### Sort
 ```sas
 Proc sort data=<dataset's name>;
 by <var1>
@@ -60,7 +60,7 @@ by descending <var1> descending <var2>;
 ```
 
 ---
-Means
+#### Means
 ```sas
 Proc means data=<dataset's name>;
 by <var1> <var2>;
@@ -74,7 +74,7 @@ mean min max std
 ```
 
 ---
-Contents 
+#### Contents 
 
 ```sas
 Proc contents data=<dataset's name>;
@@ -86,7 +86,7 @@ Proc contents data=<dataset's name> _all_;
 ```
 
 ---
-Ttest
+#### Ttest
 
 ```sas
 Proc Ttest data=<dataset's name> alpha=0.5;
@@ -99,7 +99,7 @@ var <var2>;
 ---
 
 
-Creating data wihtin SAS
+#### Creating data wihtin SAS
 
 ```sas
 Data D1;
@@ -128,7 +128,7 @@ run;
 
 ---
 
-Reading data as either Character or Number
+#### Reading data as either Character or Number
 
 ```sas
 Data D1;
@@ -148,7 +148,7 @@ run;
 
 ---
 
-Delimiter Sensitive Data
+#### Delimiter Sensitive Data
 
 ```sas
 Data D1;
@@ -162,7 +162,7 @@ run;
 
 ---
 
-Missover 
+#### Missover 
 
 When some values are missing and we need to move forward. 
 
