@@ -85,6 +85,14 @@ _all_
 Proc contents data=<dataset's name> _all_;
 ```
 
+---
+Ttest
+
+```sas
+Proc Ttest data=<dataset's name> alpha=0.5;
+class <var1>;
+var <var2>;
+```
 
 ## Creating Data within SAS
 
