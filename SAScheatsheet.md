@@ -124,6 +124,43 @@ run;
 
 ```
 
+## Reading data as either Character or Number
+
+---
+
+
+```sas
+Data D1;
+infile 'd:/computer/code';
+input name$ age sex$;
+run;
+
+Proc print data=D1;
+run;
+```
+
+## Missover 
+
+---
+
+When some values are missing and we need to move forward. 
+
+```sas
+Data D1;
+infile datalines missover;
+
+input var1, var2;
+datalines 
+1 2
+3 4
+5 
+3 6
+2
+;
+
+Proc print data=D1;
+run;
+```
 
 
 
