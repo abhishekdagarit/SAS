@@ -268,6 +268,29 @@ Proc print data=D1;
 run;
 ```
 
+
+---
+
+### Defining the length of variable to read 
+
+This requires alignment
+
+```sas
+Data D1;
+input name$1-10 age salary;
+datalines;
+ak das 23 34353534
+bk sharma 34 234242
+ck verma 43 23424
+dk gupta 34 342342
+;
+run;
+
+Proc print data=D1;
+run;
+```
+
+
 ---
 
 #### Missover 
