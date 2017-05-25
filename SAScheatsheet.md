@@ -12,14 +12,14 @@ Print
 
 Variation: 
 
-Numeric variables only: `<var1>--numeric--<var2>`
-Character variables only: `<var1>--character--<var2>`
-All variables from-to: `<var1>--<var2>` 
-Particular Observations only: `var <var1>`
-Changing the first observation: `firstobs = 30`
-Changing the last observation: `obs = 30`
-Not printing observations column: `noobs`
-Printing only distinct observations: `distinct`
+Numeric variables only: `<var1>--numeric--<var2>`&nbsp;
+Character variables only: `<var1>--character--<var2>`&nbsp;
+All variables from-to: `<var1>--<var2>` &nbsp;
+Particular Observations only: `var <var1>`&nbsp;
+Changing the first observation: `firstobs = 30`&nbsp;
+Changing the last observation: `obs = 30`&nbsp;
+Not printing observations column: `noobs`&nbsp;
+Printing only distinct observations: `distinct`&nbsp;
 
 
 Freq
