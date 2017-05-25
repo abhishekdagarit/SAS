@@ -342,9 +342,31 @@ title5 `this is my 5th title`;
 ---
 
 
+#### Options
 
+nodate - Removes Date
 
+```sas 
+Proc print data=D1;
+run;
+options nodate;
+```
 
+nonumber - Removes page number
+
+```sas 
+Proc print data=D1;
+run;
+options nonumber;
+```
+
+Editing page number
+
+```sas 
+Proc print data=D1;
+run;
+options pagenumber=100;
+```
 
 
 
