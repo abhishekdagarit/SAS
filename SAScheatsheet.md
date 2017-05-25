@@ -451,6 +451,57 @@ Proc print data=D1;
 run;
 ```
 
+---
+
+### Keep Drop
+
+Keep
+
+```sas
+Data D1(keep var1 var2 var3);
+set D2;
+run;
+
+Proc print data=D2;
+run;
+```
+
+Drop
+
+```sas
+Data D1(drop=var1);
+set D2;
+run;
+
+Proc print data=D1;
+run;
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
