@@ -25,7 +25,7 @@ noobs
 distinct 
 ```
 
-
+---
 Freq
 
 ```sas
@@ -33,6 +33,7 @@ Proc freq data=<dataset's name>;
 table <var1> <var2>;
 ```
 
+---
 Variation: 
 
 ```sas
@@ -45,6 +46,7 @@ Two tables: `table <var1> <var2>`
 Two way frequency distribution: `table <var1>*<var2>`
 ```
 
+---
 Sort
 ```sas
 Proc sort data=<dataset's name>;
@@ -58,6 +60,7 @@ by descending <var1> <var2>
 by descending <var1> descending <var2>;
 ```
 
+---
 Means
 ```sas
 Proc means data=<dataset's name>;
@@ -71,6 +74,7 @@ maxdesc = 2
 mean min max std
 ```
 
+---
 Contents 
 
 ```sas
