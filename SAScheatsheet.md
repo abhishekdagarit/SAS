@@ -14,7 +14,10 @@ Proc print data=<dataset's name>;
 
 Variation: 
 
-Printing particular column only: ```sas Proc print data=D1; var var1 var2; ```
+Printing particular column only: 
+```sas 
+Proc print data=D1; var var1 var2; 
+```
 
 Printing without observations: `Proc print data=D1 noobs;`
 Printing till an observation: `Proc print data=D1(obs=30);`
