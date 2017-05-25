@@ -145,6 +145,21 @@ Proc print data=D1;
 run;
 ```
 
+## Delimiter Sensitive Data
+
+---
+
+```sas
+Data D1;
+infile 'd:/computer/code/file1.csv' dsd dlm=';';
+input var1 var2$;
+run;
+
+Proc print data=D1;
+run;
+```
+
+
 ## Missover 
 
 ---
