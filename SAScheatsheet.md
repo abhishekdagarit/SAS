@@ -314,6 +314,18 @@ Proc print data=D1;
 run;
 ```
 
+## Labels 
+---
+
+Defining labels in print step doesn't change the actual value. But if it was kept in Data step, that would have.
+
+```sas
+Proc print data=D1 label;
+label var1='First Name';
+run;
+```
+
+
 ## Global statements
 ---
 
