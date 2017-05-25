@@ -148,6 +148,28 @@ run;
 
 ```
 
+#### More variables less data
+
+---
+
+```sas 
+/* Here it takes only the values that it needs and moves on to the next line. Hangs on for what it needs. */ 
+Data D1;
+input var1 var2 var3 var 4;
+datalines;
+1 2 55
+3 4 77
+5 6 99
+3 6 44
+3     23     43
+;
+run;
+
+Proc print data=D1;
+run;
+
+```
+
 ---
 
 #### Reading data as either Character or Number
