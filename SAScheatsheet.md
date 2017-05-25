@@ -271,6 +271,21 @@ run;
 
 ---
 
+#### Defining from where to read a variable
+
+```sas
+Data D1;
+infile 'D:computer/code/D1.csv'
+input var1 @4var2$ @6var3 @13var4;
+run;
+
+Proc print data=D1;
+run;
+```
+
+
+---
+
 #### Defining the length of variable to read 
 
 This requires alignment
@@ -518,6 +533,7 @@ proc print data=D1;
 run;
 ods _all_close;
 ```
+
 
 
 
