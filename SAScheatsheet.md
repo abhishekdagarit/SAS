@@ -24,8 +24,10 @@ Printing only distinct observations: `distinct`&nbsp;
 
 Freq
 
-`Proc freq data=<dataset's name>;`
-`table <var1> <var2>`;
+```sas
+Proc freq data=<dataset's name>;
+table <var1> <var2>;
+```
 
 Variation: 
 
