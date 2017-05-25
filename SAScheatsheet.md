@@ -84,3 +84,56 @@ _all_
 ```sas
 Proc contents data=<dataset's name> _all_;
 ```
+
+
+## Creating Data within SAS
+
+---
+
+
+```sas
+Data D1;
+	Input var1 var2;
+Datalines
+
+1 2
+1 3
+4 2
+5 6 
+3 7
+7 4 
+5 88
+5 1
+9 323
+4 6774
+32 64
+;
+
+run;
+
+Proc print data=D1;
+run;
+
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
