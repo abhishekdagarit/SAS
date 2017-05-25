@@ -131,8 +131,14 @@ run;
 
 ```sas
 Data D1;
-infile 'd:/computer/code';
+infile datalines;
 input name$ age sex$;
+
+datalines
+
+abhi 23 male
+sunny 18 female
+;
 run;
 
 Proc print data=D1;
