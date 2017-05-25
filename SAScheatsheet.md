@@ -9,8 +9,8 @@
 
 Print
 ```sas
-`Proc print data=<dataset's name>;`
-```
+Proc print data=<dataset's name>;
+````
 
 Variation: 
 
@@ -46,34 +46,37 @@ Two way frequency distribution: `table <var1>*<var2>`
 
 Sort
 ```sas
-`Proc sort data=<dataset's name>;`
-`by <var1>`
+Proc sort data=<dataset's name>;
+by <var1>
 ```
 Variation:
 ```sas
-`by descending <var1>`
-`by <var1> descending <var2>`
-`by descending <var1> <var2>`
-`by descending <var1> descending <var2>;`
+by descending <var1>
+by <var1> descending <var2>
+by descending <var1> <var2>
+by descending <var1> descending <var2>;
 ```
 
 Means
 ```sas
-`Proc means data=<dataset's name>;`
-`by <var1> <var2>;`
+Proc means data=<dataset's name>;
+by <var1> <var2>;
 ```
+
 Variation:
 Another option for by: `class <var1>`
 ```sas
-`maxdesc = 2`
-`mean min max std`
+maxdesc = 2
+mean min max std
 ```
 
 Contents 
 
 ```sas
-`Proc contents data=<dataset's name>;`
+Proc contents data=<dataset's name>;
+```
 Variation:
-_all_;
-`Proc contents data=<dataset's name> _all_;`
+_all_
+```sas
+Proc contents data=<dataset's name> _all_;
 ```
