@@ -33,9 +33,9 @@ Proc freq data=<dataset's name>;
 table <var1> <var2>;
 ```
 
----
 Variation: 
 
+```sas
 No commulative: `/nocum`
 No percentage: `/nopercentage`
 No row: `/norow`
@@ -43,7 +43,7 @@ No col: `/nocol`
 No freq: `/nofreq`
 Two tables: `table <var1> <var2>`
 Two way frequency distribution: `table <var1>*<var2>`
-
+```
 
 ---
 Sort
