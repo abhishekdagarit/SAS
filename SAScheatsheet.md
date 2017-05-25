@@ -19,13 +19,40 @@ Printing particular column only:
 Proc print data=D1; var var1 var2; 
 ```
 
-Printing without observations: `Proc print data=D1 noobs;`
-Printing till an observation: `Proc print data=D1(obs=30);`
-Printing from an observation: `Proc print data=D1(firstobs=30);`
-Printing from first to last observation: `Proc print data=D1(firstobs=10 obs=30);`
-Printing from and to a particular column: `Proc print data=D1; var1 -- var5;`
-Printing numeric values only: `Proc print data=D1; var1 -numeric- var5;`
-Printing character values only: `Proc print data=D1; var1 -character- var5;`
+Printing without observations: 
+```sas
+Proc print data=D1 noobs;
+```
+
+Printing till an observation: 
+```sas
+Proc print data=D1(obs=30);
+```
+
+Printing from an observation: 
+```sas
+Proc print data=D1(firstobs=30);
+```
+
+Printing from first to last observation: 
+```sas
+Proc print data=D1(firstobs=10 obs=30);
+```
+
+Printing from and to a particular column: 
+```sas
+Proc print data=D1; var1 -- var5;
+```
+
+Printing numeric values only: 
+```sas
+Proc print data=D1; var1 -numeric- var5;
+```
+
+Printing character values only: 
+```sas
+Proc print data=D1; var1 -character- var5;
+```
 
 
 ---
