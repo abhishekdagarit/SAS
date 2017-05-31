@@ -1,4 +1,4 @@
-# [Certifications](https://www.sas.com/en_us/certification.html#foundation-tools)
+# [Types of Official Certifications](https://www.sas.com/en_us/certification.html#foundation-tools)
 
 ### Earn a globally recognized SAS® credential.
 
