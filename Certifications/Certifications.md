@@ -1,4 +1,4 @@
-# Certifications
+# [Certifications](https://www.sas.com/en_us/certification.html#foundation-tools)
 
 ### Earn a globally recognized SAS® credential.
 
@@ -55,12 +55,12 @@ models at scale using the flexible, robust SAS environment.
 Prerequsities: 
 
 1. SAS Certified Big Data Professional Using SAS®9
-*. SAS Big Data Preparation, Statistics, and Visual Exploration
-*. SAS Big Data Programming and Loading
+11. SAS Big Data Preparation, Statistics, and Visual Exploration
+12. SAS Big Data Programming and Loading
 2. SAS Certified Advanced Analytics Professional Using SAS®9
-*. Predictive Modeling Using SAS® Enterprise Miner™ 13
-*. SAS Advanced Predictive Modeling 
-*. SAS Text Analytics, Time Series, Experimentation and Optimization  
+21. Predictive Modeling Using SAS® Enterprise Miner™ 13
+22. SAS Advanced Predictive Modeling 
+23. SAS Text Analytics, Time Series, Experimentation and Optimization  
 
 
 
