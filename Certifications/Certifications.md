@@ -56,26 +56,26 @@ models at scale using the flexible, robust SAS environment.
 
 ---
 
-SAS Certified Big Data Professional Using SAS®9 
+1. **SAS Certified Big Data Professional Using SAS®9** 
 
 *Which requires* 
 
 ---
 
-SAS Big Data Preparation, Statistics, and Visual Exploration
-SAS Big Data Programming and Loading
+1. SAS Big Data Preparation, Statistics, and Visual Exploration
+2. SAS Big Data Programming and Loading
 
 ---
 
-SAS Certified Advanced Analytics Professional Using SAS®9
+2. **SAS Certified Advanced Analytics Professional Using SAS®9**
 
 *Which requires* 
 
 ---
 
-Predictive Modeling Using SAS® Enterprise Miner™ 13
-SAS Advanced Predictive Modeling 
-SAS Text Analytics, Time Series, Experimentation and Optimization  
+1. Predictive Modeling Using SAS® Enterprise Miner™ 13
+2. SAS Advanced Predictive Modeling 
+3. SAS Text Analytics, Time Series, Experimentation and Optimization  
 
 
 
