@@ -289,11 +289,8 @@ correct_answer = "C"
 What change to the program will correct the error?
 
 Replace the WHERE statement with an IF statement
-
 Change the ** in the BMI formula to a single *
-
 Change bmi to BMI in the WHERE statement
-
 Add a (Keep=BMI) option to the SET statement
 
 correct_answer = "A"
