@@ -52,7 +52,9 @@ Designed for individuals who can manipulate and gain insights from big data with
 open source tools, make business recommendations with complex machine learning models, and then deploy 
 models at scale using the flexible, robust SAS environment.
 
-Prerequsities: 
+#### Prerequsities: 
+
+---
 
 1. SAS Certified Big Data Professional Using SAS®9 
 
