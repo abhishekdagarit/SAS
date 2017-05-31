@@ -58,7 +58,7 @@ models at scale using the flexible, robust SAS environment.
 
 1. SAS Certified Big Data Professional Using SAS®9 
 
-Which requires 
+*Which requires* 
 
 ---
 
@@ -67,7 +67,7 @@ Which requires
 
 2. SAS Certified Advanced Analytics Professional Using SAS®9
 
-Which requires
+*Which requires* 
 
 ---
 
