@@ -87,138 +87,100 @@ run;
 > c.. Class statements
 > d.. indexes
 
-Indexing:
-
-Create and use indexes especially if:
-
-a.. Subsets under %15 of parent data
-b.. Variables frequently used
-c.. Variables have high cardinality
-
-Reducing I/O
-
-a.. Indexes = reduce number of pages SAS must load
-b.. Manipulate bufsize= and buffno= to increase amount of data SAS can
-load in single i/o transaction
-
-Reducing cpu
-
-a.. Use where instead of subsetting if
-
-Consider table and/or numeric var compression
-
-Alternatives to sorting
-
-a.. Set key = : for 1-1 match - but requires an index on the key= data set
-b.. Proc format cntlin method
-
-Proc Datasets for table and index management - it only reads the descriptor
-portion, and will not rebuild the data set when creating an index
-
-Use proc append to join large base data with small data, instead of set
-statement or outer union
-
-Normalizing: transforming wide lookup data into narrow and thin tables,
-
-for faster and more natural vertical number-crunching
-
-run macro-driven jobs against huge SAS datasets on unix servers overnight
-(both data and code is in the same directory for this session) don't even
-think about using SAS Enterprise Guide, come back in the morning refreshed,
-ready to cultivate more good non-work habits
+>  #### Indexing:
+>  
+>  Create and use indexes especially if:
+>  
+>  a.. Subsets under %15 of parent data
+>  b.. Variables frequently used
+>  c.. Variables have high cardinality
+>  
+>  #### Reducing I/O
+>  
+>  a.. Indexes = reduce number of pages SAS must load
+>  b.. Manipulate bufsize= and buffno= to increase amount of data SAS can
+>  load in single i/o transaction
+>  
+>  #### Reducing cpu
+>  
+>  a.. Use where instead of subsetting if
+>  
+>  Consider table and/or numeric var compression
+>  
+>  #### Alternatives to sorting
+>  
+>  a.. Set key = : for 1-1 match - but requires an index on the key= data set
+>  b.. Proc format cntlin method
+>  
+>  Proc Datasets for table and index management - it only reads the descriptor portion, and will not rebuild the data set when creating an index.
+>  
+>  Use proc append to join large base data with small data, instead of set statement or outer union.
+>  
+>  #### Normalizing: transforming wide lookup data into narrow and thin tables, for faster and more natural vertical number-crunching
+>  
+>  run macro-driven jobs against huge SAS datasets on unix servers overnight (both data and code is in the same directory for this session) don't even think about using SAS Enterprise Guide, come back in the morning refreshed, ready to cultivate more good non-work habits.
 
 
-13)What is the different between functions and PROCs that calculate the
-same simple descriptive statistics?
+### 13. What is the different between functions and PROCs that calculate the same simple descriptive statistics?
 
-The ways they deal with character variable arguments and missing numeric
-input values are similar; as a general rule, both SAS functions and procs
-that perform computations handle missing data by omitting the missing values
+> The ways they deal with character variable arguments and missing numeric input values are similar; as a general rule, both SAS functions and procs that perform computations handle missing data by omitting the missing values.
+> 
+> SAS functions are wonderfully convenient but are also total CPU pigs, and should be used sparingly. 
 
-SAS functions are wonderfully convenient but are also total CPU pigs, and
-should be used sparingly
+### 14. If you were told to create many records from one record, show how you would do this using arrays and with PROC TRANSPOSE?
 
-14)If you were told to create many records from one record, show how you
-would do this using arrays and with PROC TRANSPOSE?
-
-
-
+```sas
 data one;
-
 input id x1 x2;
-
 cards;
-
 1
-
 2
-
 3
-
 ;
 
 
-
 data two;
-
 set one;
-
 array hold(*) x1 x2;
-
 do i=1 to 2;
-
 x=hold(i);
-
 output;
-
 end;
-
 drop i x1-x2;
-
 
 
 proc print;
 
-
-
 proc transpose
-
 data=one
-
 out=three(drop=_name_ rename=(col1=x))
-
 ;
-
 by id
-
 ;
-
 
 
 proc print data=three;
+```
 
 
-15)What is a method for assigning first.VAR and last.VAR to the BY group
-variable on unsorted data?
+### 15. What is a method for assigning first.VAR and last.VAR to the BY group variable on unsorted data?
 
-Note that data must at least be grouped together with BY values
+> Note that data must at least be grouped together with BY values
 
+```sas
 data two;
-
 set one;
-
 by id NOTSORTED;
-
 if first.id;
+```
 
 ### 16. What is the order of application for output data set options, input data set options and SAS statements?
 
-Input data set options => affect what is included in pdv
+> Input data set options => affect what is included in pdv
 
-Data set statements => affect pdv processing
+> Data set statements => affect pdv processing
 
-Output data set options => affect what is written from pdv to output buffer
-in memory
+> Output data set options => affect what is written from pdv to output buffer in memory
 
 
 ### 17. What is the order of evaluation of the comparison operators: + - * / ** ( ) ?
@@ -284,27 +246,27 @@ set c;
 ```
 
 ```sas
-	data tariff_change_v1;
-	set tariff_change;
-	by vkont rate_Cat_from tariff_from;
-	format  rate_cat_from1 date9. tariff_from1 date9. prev_tariff $20.;
-	rate_cat_from1 = input(rate_cat_from,yymmdd8.);
-	tariff_from1 = input(tariff_from,yymmdd8.);
+data tariff_change_v1;
+set tariff_change;
+by vkont rate_Cat_from tariff_from;
+format  rate_cat_from1 date9. tariff_from1 date9. prev_tariff $20.;
+rate_cat_from1 = input(rate_cat_from,yymmdd8.);
+tariff_from1 = input(tariff_from,yymmdd8.);
 	
-	prev_tariff = lag(tariff_type);
-	
-	if first.vkont then do;
-		Tariff_change_l2 = 0;
-		prev_tariff = '';
+prev_tariff = lag(tariff_type);
+
+if first.vkont then do;
+	Tariff_change_l2 = 0;
+	prev_tariff = '';
+end;
+else do;
+	if prev_tariff ne tariff_type then do;
+		if tariff_type = " " and "01jan2010"d <= rate_cat_from1 <= "31dec2010"d 
+		then Tariff_change_l2 = 1;
+		else if tariff_type ne " " and "01jan2010"d <= tariff_from1 <= "31dec2010"d 
+		then Tariff_change_l2 = 1;
 	end;
-	else do;
-		if prev_tariff ne tariff_type then do;
-			if tariff_type = " " and "01jan2010"d <= rate_cat_from1 <= "31dec2010"d 
-			then Tariff_change_l2 = 1;
-			else if tariff_type ne " " and "01jan2010"d <= tariff_from1 <= "31dec2010"d 
-			then Tariff_change_l2 = 1;
-		end;
-		else Tariff_change_l2 = 0;
-	end;
-	run;
+	else Tariff_change_l2 = 0;
+end;
+run;
 ```
