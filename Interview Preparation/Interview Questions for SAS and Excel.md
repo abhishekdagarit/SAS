@@ -32,7 +32,7 @@
 30. Let a=.(missing) and b=5 . What is the output for c=a+b and c=sum(a,b)? 
 31. What is a _Null_ dataset? 
 
-Refer the table below:
+**Refer the table below:**
 
 PolicyID | CustomerID | DOB | JoiningDate | TerminationDate | Channel | PolicyStatus | Premium | Agent Name
 ---- | ---- | ------- | ----- | ------ | ---- | ------- | ---- | -----
