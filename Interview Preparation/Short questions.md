@@ -2,14 +2,40 @@
 
 ## 1. Fill in the blanks
 
-1. SAS statements usually begin with a _ __identifying keyword___ _
-2. Every SAS statement ends with a _ semicolon; _
-3. Character variable values can be up to _ 32 _. Characters long and use _ 1 to 32,767 _. byte(s) of storage per character. 
-4. A SAS variable name has _ 1 to 32 _ characters and begin with _ character _ or an underscore(_) ____
-5. By default, numeric variables are stored in _ 8 _ bytes of storage
-6. The internally stored SAS date value for January 1, 1960 is _ 0 _
-7. A missing character value is displayed as a _ blank _
-8. A missing numeric value is displayed as a _ period _
+1. SAS statements usually begin with a _________
+
+> identifying keyword
+
+2. Every SAS statement ends with a _______
+
+> _ semicolon; _
+
+3. Character variable values can be up to _. Characters long and use _ byte(s) of storage per character. 
+
+> 32 
+> 1 to 32,767 
+
+4. A SAS variable name has _ characters and begin with _ or an _ 
+
+> 1 to 32 characters
+> character or an underscore
+
+5. By default, numeric variables are stored in _ bytes of storage
+
+> 8
+
+6. The internally stored SAS date value for January 1, 1960 is _
+
+> 0
+
+7. A missing character value is displayed as a _ 
+
+> blank
+
+8. A missing numeric value is displayed as a _
+
+> period
+
 
 ## 2. Naming the pairs
 
