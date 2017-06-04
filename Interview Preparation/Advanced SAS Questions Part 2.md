@@ -22,6 +22,8 @@ D.sales
 
 > Answer: D
 
+---
+
 
 
 2. The following SAS program is submitted: 
@@ -37,6 +39,8 @@ C.The variables named POINTS11, POINTS12, POINTS13, POINTS21, POINTS22, POINTS23
 D.No variables are created in the PDV.  
 
 > Answer: A
+
+---
 
 
 3. Given the SAS data sets 
@@ -60,6 +64,8 @@ D.INTERSECT ALL CORR
 
 > Answer: C
 
+---
+
 
 
 4. The following SAS program is submitted: 
@@ -78,6 +84,8 @@ C.what displays is three
 D.what displays is last  
 
 > Answer: B
+
+---
 
 
 
@@ -105,6 +113,8 @@ D.MSGLEVEL= I
 
 > Answer: C
 
+---
+
 
 
 6. The SAS data set WORK.TEMPDATA contains the variables > FMTNAME, START, and LABEL and it consists of 10 observations. 
@@ -122,6 +132,8 @@ C.It uses the WORK.TEMPDATA SAS data set as input to create the format.
 D.An ERROR message is written to the SAS log because the program is incomplete. 
 
 > Answer: C
+
+---
 
 
 
@@ -145,6 +157,8 @@ D.YEAR QTR BUDGET SALES 2001 3 500 300 2001 4 400 300 2002 1 700 300 2001 3 500 
 
 > Answer: C
 
+---
+
 
 
 8. Given the SAS data sets 
@@ -167,6 +181,8 @@ C.YEAR QTR BUDGET SALES 2001 3 500 300 2001 4 400 300 2002 1 700 600
 D.YEAR QTR BUDGET SALES 2001 3 500 . 2001 4 400 300 2001 4 . 300  
 
 > Answer: B
+
+---
 
 
 
@@ -192,6 +208,8 @@ D.COUNTRY CITY TOTAL UK MARLOW 10 UK LONDON 20 USA DALLAS 20 USA BOSTON 50
 
 > Answer: B
 
+---
+
 
 
 10. Given the SAS data set 
@@ -211,6 +229,8 @@ D.select distinct category, sum(sum(salary, bonus)) as EARNINGS
 
 > Answer: D
 
+---
+
 
 11. Given the SAS data sets 
 
@@ -228,6 +248,8 @@ C.COUNTRYCANADAFRANCEBELGIUM
 D.COUNTRY FRANCEGERMANYBELGIUM  
 
 > Answer: C
+
+---
 
 
 
@@ -251,6 +273,8 @@ D.where calculated average > (select avg(cost) from one);
 
 > Answer: C
 
+---
+
 
  
 13. Given the SAS data sets 
@@ -270,6 +294,8 @@ D.proc sql; create table three as select * from one union corr select * from two
 
 > Answer: A
 
+---
+
 
 
 14. The following SAS program is submitted: 
@@ -285,6 +311,8 @@ C.proc sql; contents table testdata.one; quit;
 D.proc sql; describe table testdata.one; quit;  
 
 > Answer: D
+
+---
 
 
 
@@ -305,6 +333,8 @@ D.proc sql; alter table testdata.one set num format = 4. label = 'Number'; quit;
 
 > Answer: B
 
+---
+
 
 
 16. What does the DICTIONARY.MACROS table store?  
@@ -315,6 +345,8 @@ C.information about both user and system defined macro variables
 D.information about macros stored in the autocall macro library only  
 
 > Answer: C
+
+---
 
 
 
@@ -337,6 +369,8 @@ D.a report showing the number of numeric columns in each table in SASUSER
 
 > Answer: B
 
+---
+
 
  
 18. The following SAS program is submitted: 
@@ -354,6 +388,8 @@ D.metadata on all tables in the DICTIONARY library only
 
 > Answer: A
 
+---
+
 
 
 19. Which should be avoided when creating and using an SQL procedure view?  
@@ -364,6 +400,8 @@ C.referencing a view multiple times in the same program
 D.creating views on tables whose structures remain constant  
 
 > Answer: C
+
+---
 
 
 
@@ -379,6 +417,8 @@ C.proc sql; drop table one; quit;
 D.proc sql; delete from one; quit;  
 
 > Answer: C
+
+---
 
 
  
@@ -398,6 +438,8 @@ C.proc sql; create table two as select job, level, salary * 0.1 as BONUS from on
 D.proc sql; create table two as select job, level, salary * 0.1 as BONUS from one where calculated bonus > 20; quit;  
 
 > Answer: D
+
+---
 
 
 
@@ -421,6 +463,8 @@ D.5
 
 > Answer: B
 
+---
+
 
 
 23. Given the SAS data set 
@@ -443,6 +487,8 @@ D.Macro variable GROUP has a value of SUM.
 
 > Answer: A
 
+---
+
 
 
 24. The following SAS program is submitted: 
@@ -459,6 +505,8 @@ C.yourname
 D.&yourname  
 
 > Answer: C
+
+---
 
 
 
@@ -479,6 +527,8 @@ C.a is bird
 D.a is frog  
 
 > Answer: A
+
+---
 
 
 
@@ -511,6 +561,8 @@ D.6
 
 > Answer: B
 
+---
+
 
 
 27. The following SAS program is submitted: 
@@ -530,6 +582,8 @@ D.%if &sysdate = 'Tuesday' %then %do;
 
 > Answer: A
 
+---
+
 
 
 28. Assume today is Tuesday, August 15, 2006. 
@@ -542,6 +596,8 @@ C.%let start = %sysexec(today(), weekdate.);
 D.%let start = %sysevalf(today(), weekdate.);  
 
 > Answer: B
+
+---
 
 
 
@@ -559,6 +615,8 @@ C.0.5 + 5
 D.null  
 
 > Answer: D
+
+---
 
 
  
@@ -580,6 +638,8 @@ D.null
 
 > Answer: C
 
+---
+
 
 
 31. Which of the following successfully creates and displays a macro variable with the value Patel's Restaurant? 
@@ -590,6 +650,8 @@ C.%let name = %bquote(Patel's Restaurant); %put &name;
 D.%let name = %bquote(Patel%'s Restaurant); %put &name;  
 
 > Answer: C
+
+---
 
 
 
@@ -608,6 +670,8 @@ C.It instructs SAS to do a sequential read of both sorted data sets.
 D.It gives SAS the option to use the index X or to do a sequential read of the data set ONE. 
 
 > Answer: A
+
+---
 
 
 
@@ -628,6 +692,8 @@ C.new, Y, and COL1 only
 D.new, X, Y, and _COL1_    
 
 > Answer: B
+
+---
 
 
 
@@ -651,6 +717,8 @@ D.Data set THREE is not created. ERROR and WARNING messages are written to the S
 
 > Answer: D
 
+---
+
 
 
 35. The data set ONE has a simple index X. The index X needs to be deleted and a composite index Y on the variables X and W created. 
@@ -663,6 +731,8 @@ C.The index Y should be created first to take advantage of the values stored in 
 D.The order of the deleting the index X and creating the index Y does not im  pact resource utilization.  
 
 > Answer: A
+
+---
 
 
 36. Given the SAS data sets ONE and TWO: 
@@ -685,6 +755,8 @@ D.YEAR QTR BUDGET SALES 2001 3 500 300 2001 4 400 300 2002 1 700 300 2001 3 500 
 
 > Answer: D
 
+---
+
 
 37. The SAS data set ONE contains fifty million observations and contains the variables
 
@@ -699,6 +771,8 @@ C.data two; set one; totrev = sum(price * quantity); where totrev > 1000; totcos
 D.data two; set one; where totrev > 1000; totrev = sum(price * quantity); totcost = sum(fixed,variable); profit = sum(totrev,-totcost); run;  
 
 > Answer: B
+
+---
 
 
 38. The following SAS program is submitted. 
@@ -721,6 +795,8 @@ external file 1 and external file 2.
 
 > Answer: B
 
+---
+
 
 39. Given the SAS data sets 
 
@@ -735,6 +811,8 @@ D.COMMON XY A 10 1 A 13 1 A 14 1 A 10 3 A 13 3 A 14 3 B 9 4 B 9 2
 
 > Answer: B
 
+---
+
 
 40. Which statement about compressed SAS data sets is always true?  
 
@@ -744,6 +822,8 @@ C.An updated observation is stored in its original location.
 D.New observations are added to the end of the SAS data set.  
 
 > Answer: B
+
+---
 
 
 41. Given the SAS data set 
@@ -769,6 +849,8 @@ D.NOTE: DATA STEP view saved on file SASUSER.RANCH.NOTE: The data set SASUSER.CO
 
 > Answer: A
 
+---
+
 
 42. The following SAS program is s  ubmitted: 
 
@@ -783,6 +865,8 @@ C.40
 D.(missing numeric)  
 
 > Answer: B
+
+---
 
 
 43. The following SAS program is submitted: 
@@ -800,6 +884,8 @@ D.BUFSIZE= specifies the size of the output buffer in kilobytes; BUFNO= specifie
 
 > Answer: B
 
+---
+
 
 44. Which SAS program uses the most memory resources for output buffers?  
 
@@ -809,6 +895,8 @@ C.data new(bufsize = 2000 bufno = 3); set temp;run;
 D.data new(bufsize = 4000 bufno = 1); set temp;run;  
 
 > Answer: C
+
+---
 
 
  
@@ -825,6 +913,8 @@ D.data new; set temp; if a in (1, 2) then b = 'Medium'; else if a = 6 then b = '
 
 > Answer: C
 
+---
+
 
 46. The variable TOTOBS has a value of 123, which represents the total number of observations in a SAS data set. 
 
@@ -836,6 +926,8 @@ C.ptobs = ceil(ranuni(0) * totobs);
 D.ptobs = floor(ranuni(0) * totobs);  
 
 > Answer: C
+
+---
 
 
  
@@ -849,6 +941,8 @@ resources.
 
 > Answer: C
 
+---
+
 
 48. Which SAS procedure changes the name of a permanent format for a variable stored in a SAS data set?  
 
@@ -858,6 +952,8 @@ C.REGISTRY
 D.DATASETS  
 
 > Answer: D
+
+---
 
 
 49. Which statement(s) in the DATASETS procedure alter(s) the name of a SAS data set stored in a SAS data library?  
@@ -870,6 +966,8 @@ D.MODIFY and CHANGE statements
 
 > Answer: B
 
+---
+
 
 50. Which SAS integrity constraint type ensures that a specific set or range of values are the only values in a variable?  
 
@@ -879,6 +977,8 @@ C.NOT NULL
 D.PRIMARY KEY  
 
 > Answer: A
+
+---
 
 
 51. Given the SAS dataset ONE 
@@ -904,6 +1004,8 @@ D.select salary, salary * .10 column = 'BONUS'
 
 > Answer: C
 
+---
+
 
 52. Given the SAS dataset ONE ONE SALARY 200 205 . 523 
 
@@ -926,6 +1028,8 @@ D.where salary is not missing
 
 > Answer: D
 
+---
+
 
 
 53. Which SQL procedure clause allows for dynamically assigning a library when creating an SQL procedure view?  
@@ -936,6 +1040,8 @@ C.CONNECT
 D.LIBNAME  
 
 > Answer: B
+
+---
 
 
 
@@ -960,6 +1066,8 @@ C.FULL JOIN
 D.INNER JOIN  
 
 > Answer: B
+
+---
 
 
 
@@ -987,6 +1095,8 @@ D.INNER JOIN
 
 > Answer: C
 
+---
+
 
 
 56. Given the SAS data sets CLASS1 and CLASS2: 
@@ -1012,6 +1122,8 @@ D.OUTER UNION CORR
 
 > Answer: B
 
+---
+
 
 
 57. Given the SAS data sets CLASS1 and CLASS2: CLASS1CLASS2NAME COURSENAME COURSE Lauren MATH1Smith MATH2 Patel MATH1Farmer MATH2 
@@ -1031,6 +1143,8 @@ D.OUTER UNION ALL
 
 > Answer: B
 
+---
+
 
 
 58. Given the SAS data sets MATH1A and MATH1B: MATH1AMATH1B 
@@ -1046,6 +1160,8 @@ C.INTERSECT
 D.OUTER UNION CORR  
 
 > Answer: C
+
+---
 
 
 
@@ -1065,6 +1181,8 @@ D.proc sql; select (select sales.name from sales where amount = 500), salary, bi
 
 > Answer: A
 
+---
+
 
  
 
@@ -1077,6 +1195,8 @@ D.proc sql; select * from class delete where age < (select stop_age from thresho
 
 > Answer: B
 
+---
+
 
 
 61. Which of the following is true about a noncorrelated subquery in SAS?  
@@ -1087,6 +1207,8 @@ C.The subquery creates a data set in the WORK library.
 D.The subquery can reference tables in the FROM clause in the outer query.  
 
 > Answer: B
+
+---
 
 
 
@@ -1112,6 +1234,8 @@ salary > 40000);.
 
 > Answer: A
 
+---
+
 
 
 63. The following SAS program is submitted: 
@@ -1128,6 +1252,8 @@ C.proc sql; create table class1 as select exclusive name, course from class; qui
 D.proc sql; create table class1 as select name, course from class order by distinct name; quit;  
 
 > Answer: A
+
+---
 
 
 
@@ -1151,6 +1277,8 @@ D.proc sql; create table combine as select one.id, name, salary from one full jo
 
 > Answer: A
 
+---
+
 
 
 65. The following SAS program is submitted: 
@@ -1167,6 +1295,8 @@ D.proc sql ; create table F as select * from F intersect corr select * from M; q
 
 > Answer: A
 
+---
+
 
 
 66. Which DICTIONARY table provides information on all the tables containing a variable named LASTNAME?  
@@ -1177,6 +1307,8 @@ C.DICTIONARY.MEMBERS
 D.DICTIONARY.VARIABLES  
 
 > Answer: B
+
+---
 
 
  
@@ -1190,6 +1322,8 @@ D.It can be directly referenced by both the SQL procedure and the SAS DATA step.
 
 > Answer: C
 
+---
+
 
 
 68. Given the following partial SAS log: NOTE: SQL table SASHELP.CLASS was created like: create table SASHELP.CLASS( bufsize=4096 ) ( Name char(8), Gender char(1), Age num, Height num, Weight num ); 
@@ -1202,6 +1336,8 @@ C.DESCRIBE TABLE
 D.VALIDATE TABLE  
 
 > Answer: C
+
+---
 
 
 
@@ -1218,6 +1354,8 @@ C.An error message is output to the log because the variable in parenthesis is n
 D.An error message is output to the log because the index name does not match the variable name.  
 
 > Answer: D
+
+---
 
 
 
@@ -1236,6 +1374,8 @@ C.An error message is written to the SAS log because the INSERT statement is inv
 D.Observations from WORK.NEWEMPLOYEES are appended to the COMPANY.EMPLOYEE data set.  
 
 > Answer: D
+
+---
 
 
 
@@ -1261,6 +1401,8 @@ D.There should be two ampersands in front of COL1 in the WHERE clause.
 
 > Answer: B
 
+---
+
 
 
 72. Which of the following is true about SAS automatic macro variables?
@@ -1271,6 +1413,8 @@ C.Some can have the value changed by a user.
 D.They can only be used inside of a macro definition.  
 
 > Answer: C
+
+---
 
 
 
@@ -1290,6 +1434,8 @@ C.&&COL&&NUM
 D.&&&COL&&NUM  
 
 > Answer: B
+
+---
 
 
 
@@ -1315,6 +1461,8 @@ D.A macro variable DATE with the value 12SEP2008 is retrieved from the local sym
 
 > Answer: A
 
+---
+
 
 
 75. The following SAS program is submitted: 
@@ -1337,6 +1485,8 @@ C.A macro variable DATE with the value 12SEP2008 is retrieved from the local sym
 D.A macro variable DATE with the value 12SEP2008 is retrieved from the local symbol table for the TWO macro.  
 
 > Answer: D
+
+---
 
 
 
@@ -1362,6 +1512,8 @@ D.A macro variable DATE with the value 31DEC2006 is retrieved from the local sym
 
 > Answer: A
 
+---
+
 
 
 77. The following SAS program is submitted: 
@@ -1380,6 +1532,8 @@ C.There should be no parentheses around SASHELP.CLASS.
 D.The %LET call needs a semicolon at the end of the statement.  
 
 > Answer: B
+
+---
 
 
 
@@ -1400,6 +1554,8 @@ C.The value of the macro variable VAR1 is age name.
 D.The macro variable VAR1 has no value; the macro failed to compile.  
 
 > Answer: D
+
+---
 
 
 
@@ -1424,6 +1580,8 @@ D.call symput('total', counter);
  
 
 > Answer: D
+
+---
 
 
 
@@ -1455,6 +1613,8 @@ D.Before Execution
 
 > Answer: A
 
+---
+
 
 
 81. At the start of a new SAS session, the following program is submitted: 
@@ -1476,6 +1636,8 @@ C.The macro variable PROC is stored in the SAS catalog WORK.SASMACR.
 D.The program fails to execute because PROC is a reserved word.  
 
 > Answer: B
+
+---
 
 
  
@@ -1499,6 +1661,8 @@ C.var %cols1 height;
 D.var %cols1 %cols2 height;  
 
 > Answer: B
+
+---
 
 
 
@@ -1524,6 +1688,8 @@ D.options mprint; %output
 
 > Answer: C
 
+---
+
 
 
 84. The following SAS program is submitted: 
@@ -1540,6 +1706,8 @@ C.1.8
 D.null  
 
 > Answer: A
+
+---
 
 
 
@@ -1570,6 +1738,8 @@ D.%if %bquote(&product1) = %bquote(OR) %then %do;
 
 > Answer: D
 
+---
+
 
 
 86. The following SAS program is submitted: 
@@ -1588,6 +1758,8 @@ C.result is 10 gt 5
 D.result is true  
 
 > Answer: B
+
+---
 
 
 
@@ -1608,6 +1780,8 @@ D.result is 10 + 0.5
 
 > Answer: C
 
+---
+
 
 
 88. The macro variable STATEMENT should resolve to: 
@@ -1622,6 +1796,8 @@ C.%let statement = %bquote(proc print data = sashelp.class;);
 D.%let statement = %bquote(proc print data = sashelp.class;);  
 
 > Answer: C
+
+---
 
 
 
@@ -1643,6 +1819,8 @@ C.where upcase(name) = "upcase(&value)";
 D.where upcase(name) = "%upcase(&value)";  
 
 > Answer: D
+
+---
 
 
 
@@ -1666,6 +1844,8 @@ log.
  
 
 > Answer: D
+
+---
 
 
 
@@ -1705,6 +1885,8 @@ D.SYMBOLGEN
 
 > Answer: B
 
+---
+
 
 
 92. Given the following partial SAS log: 
@@ -1730,6 +1912,8 @@ D.NOMAUTOLOCDISPLAY
 
 > Answer: A
 
+---
+
 
 
 93. At the start of a new SAS session, which keyword on the %PUT statement displays macro variables created by the SAS System?  
@@ -1740,6 +1924,8 @@ C._ GLOBAL _
 D._SYMBOLTABLE_    
 
 > Answer: A
+
+---
 
 
 
@@ -1764,6 +1950,8 @@ D.COMPANY, COUNTRY and DEPT
 
 > Answer: B
 
+---
+
 
  
 
@@ -1787,6 +1975,8 @@ D.COMPANY, COUNTRY and DEPT
 
 > Answer: B
 
+---
+
 
 
 96. The following SAS program is submitted: %let dept = prod; %let prod = merchandise; 
@@ -1801,6 +1991,8 @@ C.%put the value is '"'&&&&dept'"';
 D.%put the value is %quote(&&&dept);  
 
 > Answer: A
+
+---
 
 
 
@@ -1821,6 +2013,8 @@ C.SUMY X Y 45 A 10 45 A 13 45 A 14 45 B 9
 D.An ERROR message is written to the SAS log and the data set COMBINE is not created.  
 
 > Answer: C
+
+---
 
 
 
@@ -1844,6 +2038,8 @@ D.It names the variable NEXTFILE, whose change in value causes the INFILE statem
 
 > Answer: D
 
+---
+
 
 
 99. Given the following OPTIONS statement: 
@@ -1861,6 +2057,8 @@ D.SAS supplied formats
 
 > Answer: C
 
+---
+
 
 
 100. What describes the COMPRESS= BINARY data set option?  
@@ -1871,6 +2069,8 @@ C.It takes more CPU resources to uncompress than COMPRESS= CHAR.
 D.It is most efficient with observations less than one hundred bytes in length.  
 
 > Answer: C
+
+---
 
 
 
@@ -1891,6 +2091,8 @@ D.The data set TEMP is not created because variables A and B have invalid length
 
 > Answer: C
 
+---
+
 
 
 102. The following SAS program is submitted: 
@@ -1907,6 +2109,8 @@ C.The program retrieves the SAS source code that creates the view and places it 
 D.The program creates a DATA step view called SASUSER.RANCH and places the program code in the current editor window.  
 
 > Answer: A
+
+---
 
 
 
@@ -1926,6 +2130,8 @@ D.CHARACTER
 
 > Answer: A
 
+---
+
 
 
 104. Which of the following is true about the COMPRESS= YES data set option?  
@@ -1936,6 +2142,8 @@ C.It is most effective with numeric data that represents large numeric values.
 D.It is most effective with character data that contains patterns, rather than simple repetitions.  
 
 > Answer: B
+
+---
 
 
 
@@ -1955,6 +2163,8 @@ D.It allows users to access the same SAS data set concurrently.
 
 > Answer: B
 
+---
+
 
 
 106. What is the result of including the _TEMPORARY_ keyword option on an ARRAY statement?  
@@ -1965,6 +2175,8 @@ C.The option allows both character and numeric variables to be stored in one arr
 D.The values occupy 40 bytes more space in memory per value than DATA step variables. 
 
 > Answer: A
+
+---
 
 
 
@@ -1977,6 +2189,8 @@ D.when there is a small selection of uniformly distributed character values
 
 > Answer: B
 
+---
+
 
 
 108. Which of the following is required to use the UPDATE statement successfully in a SAS DATA step?  
@@ -1987,6 +2201,8 @@ C.Data sets can be listed in any order on the UPDATE statement.
 D.An unlimited number of data sets can be listed on the UPDATE statement.  
 
 > Answer: A
+
+---
 
 
 
@@ -2006,6 +2222,8 @@ D.CNTLOUT
 
 > Answer: C
 
+---
+
 
 
 110. What is an advantage of using a hash object in a SAS DATA step?  
@@ -2017,6 +2235,8 @@ D.The hash object key values can be multiple numeric and character data values.
 
 > Answer: D
 
+---
+
 
 
 111. What is the advantage of changing the SAS data set size?  
@@ -2027,6 +2247,8 @@ C.to vary the number of bytes of physical storage used by the data values in a S
 D.to optimize the unit of data transfer between the operating system buffers and SAS buffers in memory  
 
 > Answer: D
+
+---
 
 
 
@@ -2045,6 +2267,8 @@ D.to reduce the number of I/O operations
 
 > Answer: D
 
+---
+
 
 
 113. What is an advantage of using the SASFILE statement?  
@@ -2055,6 +2279,8 @@ C.It reduces the number of I/O operations.
 D.It reduces the amount of disk storage space required.  
 
 > Answer: C
+
+---
 
 
 
@@ -2067,6 +2293,8 @@ D.It requests that a SAS data set be opened and loaded into SAS memory one obser
 
 > Answer: A
 
+---
+
 
 
 115. When do IF-THEN/ELSE statements in a SAS DATA step always use fewer CPU resources than a SELECT statement?  
@@ -2077,6 +2305,8 @@ C.when there is a large selection of uniformly distributed values
 D.when there is a large selection of randomly distributed values  
 
 > Answer: B
+
+---
 
 
 
@@ -2089,6 +2319,8 @@ D.ABEND;
 
 > Answer: B
 
+---
+
 
 
 117. Which SET statement option names a variable that contains the number of the observation to read during the current iteration of the DATA step?  
@@ -2100,6 +2332,8 @@ D.POINT = pointobs
  
 
 > Answer: D
+
+---
 
 
 
@@ -2130,6 +2364,8 @@ created by Program Two.
 
 > Answer: C
 
+---
+
 
 
 119. When reading data into a SAS DATA step, if the input data is in a raw data file, what minimizes the amount of CPU resources required to read and process the data?  
@@ -2140,6 +2376,8 @@ C.using a RETAIN statement that selects only necessary variables
 D.using a WHERE statement that selects only necessary observations  
 
 > Answer: A
+
+---
 
 
  
@@ -2153,6 +2391,8 @@ D.a variable that represents the total number of observations in the output data
 
 > Answer: C
 
+---
+
 
 
 121. What is generated as a result of submitting the RANUNI function with a seed of 123? 
@@ -2163,6 +2403,8 @@ C.a consistent sequence of random numbers with each program execution
 D.a missing value because 123 is an invalid argument for the RANUNI function  
 
 > Answer: C
+
+---
 
 
 
@@ -2185,6 +2427,8 @@ D.WORK.TEMP contains two observations for each value of ID and WORK.STUDENTS con
 
 > Answer: C
 
+---
+
 
 
 123. Given the non-indexed SAS data set TEMP: TEMP X Y P52 P45 A13 A56 R34 R12 R78 The following SAS program is submitted: 
@@ -2200,6 +2444,8 @@ C.by X notsorted;
 D.by descending X;  
 
 > Answer: C
+
+---
 
 
 
@@ -2227,6 +2473,8 @@ D.by groupformat date;
 
 > Answer: D
 
+---
+
 
 
 125. The SAS data set WORK.CLASS contains 5 variables. The following SAS program is submitted: 
@@ -2243,6 +2491,8 @@ C.SORTDUP
 D.NODUPKEY  
 
 > Answer: D
+
+---
 
 
 
@@ -2264,6 +2514,8 @@ D.SORTSYNC= X
 
 > Answer: C
 
+---
+
 
 
 127. The following SAS program is submitted. 
@@ -2281,6 +2533,8 @@ C.INDEX=(X=(X Y));
 D.INDEX=(IND=(X Y));  
 
 > Answer: D
+
+---
 
 
 
@@ -2302,6 +2556,8 @@ D.The index on STATE is deleted and an index on ST is created.
 
 > Answer: A
 
+---
+
 
 129. When creating an index using the INDEX CREATE statement in the DATASETS procedure, which of the following is true?  
 
@@ -2312,6 +2568,8 @@ D.The index can not exist previously, but the data set must exist.
 
 > Answer: D
 
+---
+
 
 130. Which SAS program creates a simple index on the variable X in the dataset ONE? 
 
@@ -2321,4 +2579,6 @@ C.proc datasets lib = work; modify one; index create X; quit;
 D.proc datasets lib = work; modify one; index create X = X; quit;  
 
 > Answer: C
+
+---
 
